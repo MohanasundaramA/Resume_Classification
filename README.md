@@ -45,5 +45,5 @@ The dataset is scraped from online webpages named Resources for Employers. It co
   
 The best model is XGBoost with accuracy of 99.36%.
 
-## Results
+## Conclusion
 Different machine learning models have different strengths that make some better than others for certain tasks, such as detecting hate speech. Some models are more accurate, while others are more efficient. It is important to use different models and compare their performances in order to find the best category. We had achieved 99.4% accuracy on the validation data.
