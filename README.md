@@ -1,7 +1,7 @@
 # **Resume Classification**
 
 ## Abstract
-With the onset of the epidemic, everything has gone online, and individuals have been compelled to work from home. There is a need to automate the hiring process in order to enhance efficiency and decrease manual labour that may be done electronically. If resume categorization were done online, it would significantly reduce paperwork and human error. The recruiting process has several steps, but the first is resume categorization and verification. Automating the first stage would greatly assist the interview process in terms of speedy applicant selection. The classification of resumes will be performed using Machine Learning algorithms, which will aid in the extraction of skills and show diverse capabilities under appropriate job profile classes. While the abilities are being extracted, an appropriate job profile may be retrieved from the categorised and pre-processed data and shown on the interviewer's screen. During video interviews, this will aid the interviewer in the selection of candidates.
+Since the pandemic began, everything has been done online, forcing many to work from home. The recruiting process has to be automated in order to increase efficiency and reduce manual labour that may be completed electronically. Online resume classification would drastically cut down on paperwork and human error. The first phase of the hiring process is the classification and verification of resumes. Automating the first step will substantially speed up the candidate selection part of the interview process. Using machine learning algorithms, resumes will be categorised, making it easier to extract talents and display a variety of capabilities under the proper job profile classes. An appropriate job profile may be derived from the classified and pre-processed data and shown on the interviewer's screen while the talents are being extracted. This will help the interviewer choose applicants during video interviews.
 
 ## Requirements
 - Python - 3.6.7
@@ -12,16 +12,18 @@ With the onset of the epidemic, everything has gone online, and individuals have
 - Sklearn - 1.2.0
 
 ## Dataset
-The dataset is scraped from online webpages named Resources for Employers. It contains 26 different job categories. "industry," "job_designation," "job_description," "responsibilities," "requirements," "skills," and "url_links" are the different categories of data scraped from the website. The dataset contains 1038 rows and 6 columns.
+The dataset is scraped from online webpages named Resources for Employers. There are 26 distinct job categories in it. Many kinds of data collected from the website include "industry," "job designation," "job description," "responsibilities," "requirements," "skills," and "url links". The dataset has 6 columns and 1038 rows.
 
 ## Flow of the project
-1. Scraped the required contents from the website and made them into a dataframe.
-2. Corrected the target class's class imbalance.
-3. Text pre-processing (removal of stop words, emojis, mentions, urls, and other noise, as well as a lemmatizing and stemming stage) and merging all the columns into a single column.
-4. Use the TF-IDF vectorizer to convert the data into a model of numerical features that are ready to be used for classification.
+1. Gathered the required website content and converted it into a dataframe.
+2. Redressed the class disparity in the target class.
+3. Text pre-processing (including a lemmatizing and stemming stage, the elimination of stop words, emoticons, mentions, urls, and other noise), and combining all the columns into one column.
+4. Used the TF-IDF vectorizer to convert the data into a model of numerical features that are ready to be used for classification.
 5. Train five different ML classifiers using the training vectors with a splitting factor of 0.2.
-6. Tune some of the parameters of the best classifier among the five to improve the model's accuracy.
+
+6. Tune some of the parameters of the top classifier among the five to improve the model's accuracy.
 7. Use the best estimator of the selected classifier to predict the test labels.
+
 
 ## Preprocessing Techniques:
 - Letter casing
@@ -30,6 +32,7 @@ The dataset is scraped from online webpages named Resources for Employers. It co
 - Stopword removal
 - Normalization
 - Vectorization
+
 
 ## Classifiers
 - Logistic Regression
